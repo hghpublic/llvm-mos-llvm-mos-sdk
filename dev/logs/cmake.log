@@ -1,0 +1,79 @@
+[proc] Executing command: /usr/bin/aarch64-linux-gnu-gcc-14 -v
+[main] Configuring project: llvm-mos-llvm-mos-sdk 
+[proc] Executing command: /usr/local/bin/cmake -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/aarch64-linux-gnu-gcc-14 -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/aarch64-linux-gnu-g++-14 --no-warn-unused-cli -S /workspaces/llvm-mos-llvm-mos-sdk -B /workspaces/llvm-mos-llvm-mos-sdk/build -G Ninja
+[cmake] Not searching for unused variables given on the command line.
+[cmake] -- The C compiler identification is GNU 14.2.0
+[cmake] -- The CXX compiler identification is GNU 14.2.0
+[cmake] -- The ASM compiler identification is GNU
+[cmake] -- Found assembler: /usr/bin/aarch64-linux-gnu-gcc-14
+[cmake] -- Detecting C compiler ABI info
+[cmake] -- Detecting C compiler ABI info - done
+[cmake] -- Check for working C compiler: /usr/bin/aarch64-linux-gnu-gcc-14 - skipped
+[cmake] -- Detecting C compile features
+[cmake] -- Detecting C compile features - done
+[cmake] -- Detecting CXX compiler ABI info
+[cmake] -- Detecting CXX compiler ABI info - done
+[cmake] -- Check for working CXX compiler: /usr/bin/aarch64-linux-gnu-g++-14 - skipped
+[cmake] -- Detecting CXX compile features
+[cmake] -- Detecting CXX compile features - done
+[cmake] -- Did not find MOS compiler - Enabling bootstrap download.
+[cmake] CMake Warning (dev) at /opt/cmake/share/cmake-4.2/Modules/FetchContent.cmake:1383 (message):
+[cmake]   The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
+[cmake]   not set.  The policy's OLD behavior will be used.  When using a URL
+[cmake]   download, the timestamps of extracted files should preferably be that of
+[cmake]   the time of extraction, otherwise code that depends on the extracted
+[cmake]   contents might not be rebuilt if the URL changes.  The OLD behavior
+[cmake]   preserves the timestamps from the archive instead, but this is usually not
+[cmake]   what you want.  Update your project to the NEW behavior or specify the
+[cmake]   DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this
+[cmake]   robustness issue.
+[cmake] Call Stack (most recent call first):
+[cmake]   cmake/bootstrap-compiler.cmake:16 (FetchContent_Declare)
+[cmake]   CMakeLists.txt:34 (include)
+[cmake] This warning is for project developers.  Use -Wno-dev to suppress it.
+[cmake] 
+[cmake] -- Downloading LLVM-MOS compiler, please wait...
+[cmake] -- LLVM-MOS compiler downloaded
+[cmake] rosetta error: failed to open elf at /lib64/ld-linux-x86-64.so.2
+[cmake]  CMake Error at cmake/find-mos-compiler.cmake:62 (message):
+[cmake]   Unable to target MOS using
+[cmake]   /workspaces/llvm-mos-llvm-mos-sdk/build/_deps/llvm-mos-src/bin/mos-clang.
+[cmake]   Try setting LLVM_MOS to a directory containing LLVM-MOS clang binary.
+[cmake] Call Stack (most recent call first):
+[cmake]   CMakeLists.txt:40 (find_mos_compiler)
+[cmake] 
+[cmake] 
+[cmake] -- Configuring incomplete, errors occurred!
+[proc] The command: /usr/local/bin/cmake -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/aarch64-linux-gnu-gcc-14 -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/aarch64-linux-gnu-g++-14 --no-warn-unused-cli -S /workspaces/llvm-mos-llvm-mos-sdk -B /workspaces/llvm-mos-llvm-mos-sdk/build -G Ninja exited with code: 1
+[main] Configuring project: llvm-mos-llvm-mos-sdk 
+[proc] Executing command: /usr/local/bin/cmake -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/aarch64-linux-gnu-gcc-14 -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/aarch64-linux-gnu-g++-14 --no-warn-unused-cli -S /workspaces/llvm-mos-llvm-mos-sdk -B /workspaces/llvm-mos-llvm-mos-sdk/build -G Ninja
+[cmake] Not searching for unused variables given on the command line.
+[cmake] -- Did not find MOS compiler - Enabling bootstrap download.
+[cmake] CMake Warning (dev) at /opt/cmake/share/cmake-4.2/Modules/FetchContent.cmake:1383 (message):
+[cmake]   The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
+[cmake]   not set.  The policy's OLD behavior will be used.  When using a URL
+[cmake]   download, the timestamps of extracted files should preferably be that of
+[cmake]   the time of extraction, otherwise code that depends on the extracted
+[cmake]   contents might not be rebuilt if the URL changes.  The OLD behavior
+[cmake]   preserves the timestamps from the archive instead, but this is usually not
+[cmake]   what you want.  Update your project to the NEW behavior or specify the
+[cmake]   DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this
+[cmake]   robustness issue.
+[cmake] Call Stack (most recent call first):
+[cmake]   cmake/bootstrap-compiler.cmake:16 (FetchContent_Declare)
+[cmake]   CMakeLists.txt:34 (include)
+[cmake] This warning is for project developers.  Use -Wno-dev to suppress it.
+[cmake] 
+[cmake] -- Downloading LLVM-MOS compiler, please wait...
+[cmake] -- LLVM-MOS compiler downloaded
+[cmake] rosetta error: failed to open elf at /lib64/ld-linux-x86-64.so.2
+[cmake]  CMake Error at cmake/find-mos-compiler.cmake:62 (message):
+[cmake]   Unable to target MOS using
+[cmake]   /workspaces/llvm-mos-llvm-mos-sdk/build/_deps/llvm-mos-src/bin/mos-clang.
+[cmake]   Try setting LLVM_MOS to a directory containing LLVM-MOS clang binary.
+[cmake] Call Stack (most recent call first):
+[cmake]   CMakeLists.txt:40 (find_mos_compiler)
+[cmake] 
+[cmake] 
+[cmake] -- Configuring incomplete, errors occurred!
+[proc] The command: /usr/local/bin/cmake -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/aarch64-linux-gnu-gcc-14 -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/aarch64-linux-gnu-g++-14 --no-warn-unused-cli -S /workspaces/llvm-mos-llvm-mos-sdk -B /workspaces/llvm-mos-llvm-mos-sdk/build -G Ninja exited with code: 1
